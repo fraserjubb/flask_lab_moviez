@@ -7,14 +7,11 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    <h1>Order List</h1>
+    <h1>Customer Order</h1>
     <ul>
-        {% for order in orders %}
         <li>
-            <p> <a href=http://localhost:4999/orders/{{loop.index0}}> {{order.customer_name}} - {{order.order_date}} - {{order.quantity}} - {{order.movie_name}}</a> </p>     
+            <p>{{order.customer_name}} - {{order.order_date}} - {{order.quantity}} - {{order.movie_name}}</p>
         </li>
-        {% endfor %}
     </ul>
 </body>
 </html>
-
